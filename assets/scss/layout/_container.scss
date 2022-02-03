@@ -1,0 +1,257 @@
+//container-info1
+
+.container-information1 {
+  border: 1px solid black;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.container-info1 {
+  max-width: 380px;
+  border: 1px dotted gray;
+  padding: 5px;
+  margin: 20px auto;
+  font-family: $ff-ubuntu;
+  &__img {
+    width: 22rem;
+    margin: 10px auto;
+    display: block;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  &__p1 {
+    line-height: 2rem;
+    text-align: justify;
+    margin: 0 10px;
+  }
+  &__p2 {
+    margin: 10px 10px;
+    font-size: $fs-large;
+    font-weight: $fw-bold;
+  }
+  &__title {
+    margin-top: 10px;
+    font-size: $fs-x-large;
+    font-weight: $fw-bold;
+    margin-left: 10px;
+  }
+}
+
+.far {
+  color: $color-black;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.fas {
+  color: $color-black;
+}
+
+//container-info2
+
+.container-information2 {
+  border: 1px solid black;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.container-info2 {
+  max-width: 380px;
+  padding: 5px;
+  margin: 20px auto;
+  font-family: $ff-ubuntu;
+  &__img {
+    width: 16rem;
+    margin: 10px auto;
+    display: block;
+    height: 16rem;
+    border-radius: 150px;
+    border: 1px solid $color-sable;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    -ms-border-radius: 150px;
+    -o-border-radius: 150px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+  &__p1 {
+    line-height: 2rem;
+    text-align: justify;
+    margin: 0 10px;
+  }
+  &__title {
+    text-align: center;
+    &--back {
+      color: $color-white;
+      background-color: $color-charcoal;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+  &__img2 {
+    width: 16rem;
+    height: 17rem;
+    display: block;
+    margin: 10px auto;
+  }
+}
+.container-info {
+  &__list {
+    text-decoration: none;
+    color: rgb(162, 52, 196);
+  }
+}
+
+.fa-facebook-f {
+  color: $color-black;
+  margin-right: 15px;
+}
+.fa-github {
+  color: $color-black;
+  margin-right: 15px;
+}
+.fa-twitter {
+  color: $color-black;
+  margin-right: 15px;
+}
+
+@include desktop-view {
+  .container-information1 {
+    border: 1px solid black;
+    max-width: 30rem;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .container-info1 {
+    max-width: 30rem;
+    border: 1px dotted gray;
+    padding: 5px;
+    margin: 10px auto;
+    font-family: $ff-ubuntu;
+    &__img {
+      width: 25rem;
+      margin: 10px auto;
+      display: block;
+    }
+    &__p1 {
+      line-height: 2rem;
+      text-align: justify;
+      margin: 0 10px;
+    }
+    &__p2 {
+      margin: 10px 10px;
+      font-size: $fs-large;
+      font-weight: $fw-bold;
+    }
+    &__title {
+      margin-top: 10px;
+      font-size: $fs-x-large;
+      font-weight: $fw-bold;
+      margin-left: 10px;
+    }
+  }
+}
+
+@include desktop-view {
+  .container-information2 {
+    border: 1px solid black;
+    max-width: 30rem;
+    height: 1127px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .container-info2 {
+    max-width: 30rem;
+    padding: 5px;
+    margin: 20px auto;
+    font-family: $ff-ubuntu;
+    &__img {
+      width: 12rem;
+      margin: 10px auto;
+      display: block;
+      height: 12rem;
+      border-radius: 150px;
+      border: 1px solid $color-sable;
+      -webkit-border-radius: 150px;
+      -moz-border-radius: 150px;
+      -ms-border-radius: 150px;
+      -o-border-radius: 150px;
+    }
+    &__link {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+    }
+    &__p1 {
+      line-height: 2rem;
+      text-align: justify;
+      margin: 0 10px;
+    }
+    &__title {
+      text-align: center;
+      &--back {
+        color: $color-white;
+        background-color: $color-charcoal;
+        text-align: center;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+//svg
+.simbolo {
+  display: block;
+  margin: 10px auto;
+  &__1 {
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  &__2 {
+    animation-name: moved;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  50% {
+    transform: translateX(35%);
+    -webkit-transform: translateX(35%);
+    -moz-transform: translateX(35%);
+    -ms-transform: translateX(35%);
+    -o-transform: translateX(35%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+@keyframes moved {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
